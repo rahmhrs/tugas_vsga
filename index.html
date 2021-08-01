@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Rahmah Sita">
+	<title>TUGAS 2 JWD-D VSGA</title>
+	<style>
+		.header {
+    		font-size: 20px;
+    		padding: 60px;
+    		background-color: #BCFFB9;
+    		text-align: center;
+    		color: black;
+    	}
+		nav {
+    		background-color: #28FFBF;
+   			padding: 5px;
+    		position: sticky;
+    		top: 0;
+    	}
+    	nav li {
+    		display: inline;
+    		list-style-type: none;
+    		margin-right: 20px;
+		}
+
+ 		nav a {
+    		font-size: 18px;
+    		font-weight: 400;
+    		text-decoration: none;
+ 		}
+
+ 		article{
+   	  		padding: 2%;
+ 		}
+
+		input[type="text"], 
+		input[type="submit"],
+		input[type="reset"],
+		input[type="radio"],
+		label,
+		select,
+		option{
+    		margin: 10px;
+		}
+
+
+ 		footer {
+   			padding: 20px;
+    		color: black;
+    		background-color: #28FFBF;
+    		text-align: center;
+    		font-weight: bold;
+ 		}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="header">
+        <h1>Junior Web Developer kelas D</h1>
+        <p>Program pelatihan DTS-Kominfo VSGA skema Junior Web Developer yang diselenggarakan oleh Telkom University tahun 2021 kelas D</p>
+    </div>
+    <nav>
+    	<ul>
+    		<li><a href="#pengajar">Pengajar</a></li>
+            <li><a href="#jadwal">Jadwal</a></li>
+            <li><a href="#fillin">Form Peserta</a></li>
+    	</ul>
+    </nav>
+    <div class="content">
+    	<article id="pengajar">
+            <h2>Pengajar</h2>
+            <table>
+                <tr>
+                    <td><img width="150" src="profil1.png" alt="profil picture pengajar"></td>
+                    <td>
+                        <h4>Pengajar</h4>
+                        Reza Budiawan<br>
+                        D3 Rekayasa Perangkat Lunak Aplikasi
+                    </td>
+                </tr>
+                <tr>
+                    <td><img width="150" src="profil2.png" alt="profil picture asisten"></td>
+                    <td>
+                        <h4>Asisten Pengajar</h4>
+                        Novitriana Gadis<br>
+                        D3 Sistem Informasi
+                    </td>
+                </tr>
+            </table>
+            
+        </article>
+         <article id="jadwal">
+            <h2>Jadwal</h2>
+            <p>Jadwal sesi live diselenggarakan sesuai tanggal yang diberikan oleh Kominfo. Melalui zoom <a href="https://us02web.zoom.us/j/87888185823?pwd=MUhRZE5zMWNVV2phTDg4TWtRMUVZdz09">berikut</a>.</p>
+        </article>
+
+        <article id="fillin">
+        	<h2>Formulir Peserta</h2>
+        	<form action="">
+        		<label for="Nama">Nama : </label><input id="username" type="text">
+				<br>
+				<label for="gender">Gender</label>
+				<input type="radio" name="gender" id="gender" value="pria"> Laki-laki 
+				<input type="radio" name="gender" id="gender" value="wanita"> Perempuan
+				<br>
+				<label for="status">Status</label>
+                <select name="status" id="status">
+                    <option value="1">SMK</option>
+                    <option value="2">Lulusan SMK non-IT</option>
+                    <option value="3">Lulusan SMK IT</option>
+                    <option value="4">Alumni Perguruan Tinggi</option>
+                </select>
+                <br>
+                <button type="button">Submit</button> <button type="reset">Reset</button>
+            </form>
+        </article>
+    </div>
+    <footer>
+    	DTS-VSGA 2021 - Kominfo - Universitas Telkom
+    </footer>
+</body>
+
+</html>
